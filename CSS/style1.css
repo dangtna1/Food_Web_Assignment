@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+#logo-image>img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+.nav-bar-custom {
+    width: 100vw;
+    position: fixed;
+    padding-left: 112px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.custom-button { 
+    text-decoration: none;   
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+}
+#title {
+    width: 100%;
+    position: absolute;
+    top: 95px;
+    font-size: 40px;
+    color: #fff;
+    padding: 20px;
+    background: #193498;
+    opacity: 0.85;
+}
+/* body */
+main {
+    padding-top: 300px;
+    padding-bottom: 200px;
+    background: #F0FFFF;
+}
+
+.left-content {
+    width: 40%;
+}
+.left-content > img {
+    width: 100%;
+}
+.right-content {
+    width: 60%;
+}
+.right-content > img {
+    width: 100%;
+}
+
+/* footer */
+footer {
+    background: #69DADB;
+}
+#support-list {
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#support-list > li {
+    list-style: none;
+}
+#support-list > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+#network {
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#download-info {
+    width: 50%;
+    display: flex; 
+    justify-content: flex-start;
+}
+#download-info > a {
+    width: 30%;
+}
+#download-info > a > img {
+    max-width: 80%;
+}
+#download-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* pagination */
+.pagination {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+.pagination a {
+    display: block;
+    color: black;
+    float: left;
+    padding: 14px 28px;
+    text-decoration: none;
+    transition: background-color .3s;
+}  
+.pagination a.active {
+    background-color: #193498;
+    color: white;
+} 
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+/* responsive */
+@media(max-width: 880px) {
+    #support-list {
+        display: flex;
+        flex-direction: column;
+    }
+    #support-list > li {
+        margin: 10px;
+    }
+    #network {
+        width: 20%;
+        flex-direction: row;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .left-content {
+        width: 100%;
+    }
+    .right-content {
+        width: 100%;
+    }
+    .pagination {
+        left: 40%;
+    }
+
+}
+@media(max-width: 768px) {
+    #logo-image > img {
+        position: absolute;
+        top: -10000px;
+        left: -10000px;
+    }
+    #network {
+        flex-direction: column;
+    }
+    #title {
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        font-size: 30px;
+        color: #fff;
+        padding: 10px;
+        background: #193498;
+        opacity: 0.85;
+    }
+    .pagination {
+        top: 20%;
+    }
+}
+
